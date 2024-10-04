@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: #c1cce1;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #020031;
+    height: 9.6rem;
+}
+
+body{
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+h1.title{
+    color: #020031;
+    font-size: 30px;
+    text-align: center;
+    margin: 80px 0 40px 0;
+}
+
+
+/* ESTILO DO HEADER */
+
+header{
+    background-color: #020031;
+    padding: 10px 0;
+}
+
+header .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .interface .logo img{
+    max-width: 150px;
+}
+
+header .interface nav.menu ul{
+    list-style-type: none;
+    display: flex;
+    gap: 35px;
+}
+
+header .interface nav.menu a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    transition: .3s;
+    display: block;
+}
+
+header .interface nav.menu a:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+header .interface .btn-contato a{
+    text-decoration: none;
+}
+
+header .interface .btn-contato button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 200;
+    transition: .8s;
+}
+
+header .interface .btn-contato button:hover{
+    transform: scale(1.05);
+    background-color: #fff;
+    border: none;
+    color: #020031;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 0 20px #ffffff57;
+}
+
+/* ESTILO DA HERO */
+
+section.hero{
+    background-color: #020031;
+    height: 85vh;
+}
+
+section.hero .interface{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.hero .interface .img-hero-responsiva img.logo-responsiva{
+    display: none;
+}
+
+section.hero .interface .txt-hero{
+    margin-top: 80px;
+    width: 50%;
+}
+
+section.hero .interface .txt-hero h1{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+section.hero .interface .txt-hero h1 span{
+    font-weight: 800;
+}
+
+section.hero .interface .txt-hero p{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+section.hero .interface .txt-hero .btn-reserva button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 200;
+    transition: .8s;
+}
+
+section.hero .interface .txt-hero .btn-reserva button:hover{
+    transform: scale(1.05);
+    background-color: #fff;
+    border: none;
+    color: #040142;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 0 20px #ffffff57;
+}
+
+section.hero .interface .img-hero img.logo-normal{
+    width: 550px;
+}
+
+/* ESTILO DO SOBRE */
+
+section.sobre{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+section.sobre .interface .top-sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+section.sobre .interface .top-sobre img{
+    width: 200px;
+}
+
+section.sobre .interface .bottom-sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.sobre .interface .bottom-sobre-left, section.sobre .interface .bottom-sobre-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-sobre-left, .bottom-sobre-right{
+    width: 50%;
+}
+
+.bottom-sobre-left .card, .bottom-sobre-right .card{
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #020031;
+    margin: 15px 50px;
+}
+
+.bottom-sobre-left .card .txt-card h1, .bottom-sobre-right .card .txt-card h1{
+    font-size: 22px;
+    font-weight: 600;
+    color: #020031;
+    margin-bottom: 10px;
+}
+
+.bottom-sobre-left .card .txt-card h1 span, .bottom-sobre-right .card .txt-card h1 span{
+    font-weight: 300;
+}
+
+.bottom-sobre-left .card .txt-card p, .bottom-sobre-right .card .txt-card p{
+    width: 80%;
+    font-size: 15px;
+    color: #020031;
+}
+
+.bottom-sobre-left .card .img-card img, .bottom-sobre-right .card .img-card img{
+    width: 150px;
+}
+
+/* ESTILO DO RESERVA */
+
+section.reserva{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c1cce1;
+    margin-top: 50px;
+}
+
+section.reserva .interface form .top-form input.nome{
+    width: 60%;
+    background-color: #fff;
+    padding: 10px;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+section.reserva .interface form .top-form input.vagas{
+    width: 35%;
+    background-color: #fff;
+    padding: 10px;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+section.reserva .interface form .middle-form input.tel{
+    width: 34%;
+    background-color: #fff;
+    padding: 10px;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+section.reserva .interface form .middle-form input.data{
+    width: 30%;
+    background-color: #fff;
+    padding: 10px;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin: 0 5px;
+}
+
+section.reserva .interface form .middle-form input.hora{
+    width: 30%;
+    background-color: #fff;
+    padding: 10px;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+section.reserva .interface form .bottom-form input.observacoes{
+    width: 98%;
+    height: 140px;
+    background-color: #fff;
+    padding: 10px;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+section.reserva .interface form .button-enviar{
+    display: flex;
+    justify-content: center;
+}
+
+section.reserva .interface form .button-enviar button{
+    border: none;
+    background-color: #020031;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    transition: .5s;
+}
+
+section.reserva .interface form .button-enviar button:hover{
+    color: #020031;
+    background-color: #fff;
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px #02003159;
+}
+
+/* ESTILO DAS AVALIAÇÕES */
+
+section.avaliacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c1cce1;
+}
+
+section.avaliacoes .interface .top-avaliacoes, section.avaliacoes .interface .bottom-avaliacoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 50px;
+}
+
+section.avaliacoes .interface .top-avaliacoes .card-avaliacoes, section.avaliacoes .interface .bottom-avaliacoes .card-avaliacoes{
+    padding: 10px;
+    max-width: 40%;
+    border-bottom: 1px solid #020031;
+    border-top: 1px solid #020031;
+}
+
+section.avaliacoes .interface .top-avaliacoes .card-avaliacoes h1, section.avaliacoes .interface .bottom-avaliacoes .card-avaliacoes h1{
+    font-size: 18px;
+    color: #020031;
+}
+
+section.avaliacoes .interface .top-avaliacoes .card-avaliacoes h6, section.avaliacoes .interface .bottom-avaliacoes .card-avaliacoes h6{
+    color: #020031;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 2px 0 15px 0;
+}
+
+section.avaliacoes .interface .top-avaliacoes .card-avaliacoes p, section.avaliacoes .interface .bottom-avaliacoes .card-avaliacoes p{
+    color: #020031;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+/* ESTILO DOS CONTATOS */
+
+section.contatos{
+    padding: 45px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.contatos .interface h1{
+    font-size: 30px;
+    color: #020031;
+    margin-bottom: 30px;
+}
+
+section.contatos .interface h1 span{
+    font-weight: 300;
+}
+
+section.contatos .interface .buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+section.contatos .interface .buttons a{
+    text-decoration: none;
+}
+
+section.contatos .interface .buttons a button{
+    background-color: transparent;
+    border: 1px solid #020031;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #020031;
+    transition: .5s;
+}
+
+section.contatos .interface .buttons a button:hover{
+    background-color: #020031;
+    color: #fff;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* ESTILO DO FOOTER */
+
+footer{
+    background-color: #020031;
+    display: flex;
+    padding: 15px 0 0 0;
+    width: 100%;
+}
+
+footer .interface{
+    width: 100%;
+}
+
+footer .interface .top-footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer .interface .top-footer img{
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+footer .interface hr{
+    height: 1px;
+    background-color: #fff;
+    width: 100%;
+}
+
+footer .interface .bottom-footer{
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer .interface .bottom-footer p.direitos{
+    font-weight: 300;
+}
+
+footer .interface .bottom-footer p.autora{
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 10px;
+}

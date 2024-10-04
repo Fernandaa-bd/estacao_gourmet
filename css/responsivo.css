@@ -1,0 +1,115 @@
+
+@media screen and (max-width: 900px){
+
+/* RESPONSIVO DO HEADER */
+
+header .interface nav.menu{
+    display: none;
+}
+
+
+/* RESPONSIVO DA HERO */
+
+section.hero .interface{
+    flex-direction: column;
+}
+
+section.hero .interface .txt-hero{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+section.hero .interface .txt-hero h1{
+    font-size: 2rem;
+}
+
+section.hero .interface .txt-hero p{
+    font-size: .9rem;
+}
+
+section.hero .interface .img-hero img.logo-normal{
+    display: none;
+}
+
+section.hero .interface .img-hero-responsiva img.logo-responsiva{
+    width: 320px;
+    display: block;
+}
+
+/* RESPONSIVO DO SOBRE */
+
+section.sobre .interface .top-sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+section.sobre .interface .top-sobre img{
+    width: 200px;
+}
+
+section.sobre .interface .bottom-sobre{
+    flex-direction: column;
+}
+
+section.sobre .interface .bottom-sobre-left, section.sobre .interface .bottom-sobre-right{
+    display: flex;
+}
+
+.bottom-sobre-left, .bottom-sobre-right{
+    width: 100%;
+}
+
+.bottom-sobre-left .card, .bottom-sobre-right .card{
+    width: 90%;
+    flex-direction: column;
+    margin: 15px auto;
+}
+
+.bottom-sobre-left .card .txt-card, .bottom-sobre-right .card .txt-card{
+    order: 1;
+    text-align: center;
+}
+
+.bottom-sobre-left .card .img-card img, .bottom-sobre-right .card .img-card img{
+    order: 0;
+}
+
+.bottom-sobre-left .card .txt-card h1, .bottom-sobre-right .card .txt-card h1{
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.bottom-sobre-left .card .txt-card p, .bottom-sobre-right .card .txt-card p{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.bottom-sobre-left .card .img-card img, .bottom-sobre-right .card .img-card img{
+    width: 150px;
+}
+
+/* RESPONSIVO DAS AVALIAÇÕES */
+
+section.avaliacoes .interface .top-avaliacoes, section.avaliacoes .interface .bottom-avaliacoes{
+    flex-direction: column;
+}
+
+section.avaliacoes .interface .top-avaliacoes .card-avaliacoes, section.avaliacoes .interface .bottom-avaliacoes .card-avaliacoes{
+    max-width: 100%;
+}
+
+/* RESPONSIVO DO FOOTER */
+
+footer .interface .bottom-footer p.direitos{
+    font-size: 12px;
+}
+
+}
